@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single+Ink:wght@400;700&display=swap');
 
 body {
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
     background-color: rgb(3, 3, 3);
@@ -176,3 +177,4 @@ body {
     object-position: center; 
     border-radius: 20px;
 }
+
