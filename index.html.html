@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="card-container">
+        <div class="card-flip">
+            <!-- Front Side -->
+            <div class="card-front">
+                <br><br><br><br><br><br>
+                <h1 class="orbitron-font" style="text-align: center; font-size: 35px;">Student Card</h1>
+            </div>
+            <!-- Back Side -->
+            <div class="card-back">
+                <div class="infoframe">
+                    <div class="header">
+                        <img src="logo.png" class="logo">
+                        <h2 class="cyber-text" style="font-size: 23px;">Ashkelon Academic College</h2>
+                    </div>
+                    <hr class="cyber-line">
+                    <div class="photoframe">
+                        <img src="personal.png" class="photoadjust">
+
+                    </div>
+                    <div style="line-height: 5px;">
+                        <h3 class="orbitron-fontV2">&nbsp;&nbsp;Name:</h3>
+                        <h3 class="cyber-textV2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sergey Levitski</h3>
+                        <br>
+                        <h3 class="orbitron-fontV2">&nbsp;&nbsp;Course:</h3>
+                        <h3 class="cyber-textV2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Software Engineering</h3>
+                        <br>
+                        <h3 class="orbitron-fontV2">&nbsp;&nbsp;Email:</h3>
+                        <h3 class="cyber-textV2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sergo94@edu.aac.ac.il</h3>
+                        <br><br><br><br><br>
+                        <p id="date" class="cyber-textV2" style="text-align: center;"></p>
+                        <script>
+                            const d = new Date();
+                            const day = String(d.getDate()).padStart(2, '0');
+                            const month = String(d.getMonth() + 1).padStart(2, '0'); // months start at 0
+                            const year = d.getFullYear();
+                            document.getElementById("date").innerHTML = `${day}/${month}/${year}`;
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

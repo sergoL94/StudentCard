@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single+Ink:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(3, 3, 3);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.card-container {
+    width: 600px;
+    height: 350px;
+    position: absolute;
+    top: 250px;
+    left: 525px;
+    perspective: 1000px;
+}
+.card-flip {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+}
+.card-container:hover .card-flip {
+    transform: rotateY(180deg);
+}
+.card-front,.card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 35px;
+    border: 1.5px solid rgb(54, 52, 52);
+    box-shadow: 0 15px 29px 0 rgba(20, 81, 147, 0.96);
+}
+.card-front {
+        background:
+        linear-gradient(rgba(10, 10, 10, 0.5),
+            rgba(10, 10, 10, 0.5)),
+        url('card5.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(8px);
+}
+.card-back {
+    background:
+        linear-gradient(rgba(121, 131, 131, 0.5),
+            rgba(23, 52, 123, 0.5));
+    transform: rotateY(180deg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(8px);
+}
+.orbitron-font {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #1d78a3;
+  text-shadow:
+    0 0 4px  rgba(4, 41, 80, 0.96),
+    0 0 10px rgba(5, 75, 110, 0.96),
+    0 0 18px rgba(20, 81, 147, 0.96),
+    0 0 30px rgba(0, 229, 255, 0.96); 
+}
+.orbitron-fontV2 {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #0567e0;
+  text-shadow:
+    0 0 4px  rgba(4, 41, 80, 0.96),
+    0 0 10px rgba(5, 75, 110, 0.96),
+    0 0 18px rgba(20, 81, 147, 0.96),
+    0 0 30px rgba(0, 229, 255, 0.96);  
+}
+
+.cyber-text {
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+    color: rgb(83, 34, 69);
+    text-shadow:
+        0 0 5px rgb(116, 111, 111),
+        0 0 10px rgb(116, 111, 111),
+        0 0 20px rgb(116, 111, 111);
+}
+.cyber-textV2 {
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #eaebec;
+    font-size: 17px;
+    
+}
+.infoframe {
+    font-family: 'Orbitron', sans-serif;
+    color: #ffffff;
+    text-align:left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #07169f;
+    border-radius: 10px;
+    width: 90%;
+    height: 85%;
+}
+.logo {
+    font-size: 10px; 
+    width: 90px; 
+    height: auto; 
+    margin-right: auto;
+    margin: 2%;
+}
+.header {
+    display: flex;
+    align-items: center;
+    background: repeating-linear-gradient(
+        0deg,
+        rgba(234, 226, 226, 0.05),
+        rgba(234, 226, 226, 0.05) 2px,
+        transparent 2px,
+        transparent 4px
+    );
+}
+.cyber-line {
+    border: 1px solid transparent;
+    height: 2px;
+    
+    background-image: linear-gradient(to right, #07169f, #0567e0, #07169f);
+    margin-top: -3px;
+    margin-bottom: 10px;
+    width: 98%;
+}
+.photoframe {
+    font-family: 'Orbitron', sans-serif;
+    color: #ffffff;
+    text-align:left;
+    position: absolute;
+    top: 58%;
+    left: 83%;
+    transform: translate(-50%, -50%);
+    border: 0 solid rgba(20, 81, 147, 0.96);
+    border-radius: 20px;
+    width: 30%;
+    height: 79%;
+    align-self: left;
+    margin: 10px;
+}
+.photoadjust {
+    width: 100%;
+    height: 98%;
+    object-fit: cover;    
+    object-position: center; 
+    border-radius: 20px;
+}
