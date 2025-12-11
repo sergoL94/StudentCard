@@ -2,18 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single+Ink:wght@400;700&display=swap');
 
 body {
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
     background-color: rgb(3, 3, 3);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    perspective: 1000px;
+    overflow: hidden;
 
 }
 .card-container {
@@ -177,4 +172,5 @@ body {
     object-position: center; 
     border-radius: 20px;
 }
+
 
